@@ -1,0 +1,282 @@
+{% extends "home/base.html" %}
+{% load static %}
+
+{% block title %}Ezaril Harith{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 hero-content" data-aos="fade-right">
+                <p class="hero-greeting">Welcome to my portfolio</p>
+                <h1 class="hero-title">EzarilHarith</h1>
+                <p class="hero-subtitle">Aspiring Computer Scientist</p>
+                <p class="hero-description">
+                    Expanding my expertise as a Data Analyst. I integrate data analysis, machine learning, and web development to create intelligent, data-driven solutions.
+                </p>
+                <div class="hero-buttons">
+                    <a href="{% url 'projects' %}" class="btn btn-primary">
+                        View Projects
+                    </a>
+                    <a href="{% url 'contact' %}" class="btn btn-outline-light">
+                        Get In Touch
+                    </a>
+                </div>
+                
+                <!-- Stats -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3 class="stat-number">3+</h3>
+                        <p class="stat-label">Projects</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number">5+</h3>
+                        <p class="stat-label">Technologies</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number">100%</h3>
+                        <p class="stat-label">Dedicated</p>
+                    </div>
+                </div>
+            </div>
+            
+         <div class="col-lg-6 hero-image" data-aos="fade-left">
+    <div class="image-container">
+        <!-- Profile Image -->
+        <div class="profile-image">
+            <img src="{% static 'home/images/mypicture.JPG' %}" alt="Ezaril Harith">
+        </div>
+        
+        <!-- Image Overlay Info -->
+        <div class="image-overlay">
+            <div class="overlay-label">Status</div>
+            <div class="overlay-value">Available for projects</div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Preview Section -->
+<section class="section-padding bg-dark">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6" data-aos="fade-right">
+                <div class="about-image-wrapper">
+                    <div class="about-badge">
+                        <i class="fas fa-code"></i>
+                        <span>Clean Code Philosophy</span>
+                    </div>
+                    <div class="code-snippet">
+                        <pre><code>def build_solution():
+    analyze_problem()
+    design_architecture()
+    implement_efficiently()
+    deploy_successfully()
+    return innovation</code></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+                <h2 class="section-title">AboutMe</h2>
+                <p class="section-description">
+                    I'm a final-year Computer Science student majoring in Big Data Analytics at Universiti Teknologi MARA (UiTM), and I am expected to graduate in August 2026.
+                </p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check-circle"></i> Data Analysis</li>
+                    <li><i class="fas fa-check-circle"></i> AI & Machine Learning</li>
+                    <li><i class="fas fa-check-circle"></i> Optimization Algorithms</li>
+                    <li><i class="fas fa-check-circle"></i> Full-Stack Development</li>
+                </ul>
+                <a href="{% url 'about' %}" class="btn btn-primary mt-3">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Projects -->
+<section class="section-padding">
+    <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="section-title">FeaturedWork</h2>
+            <p class="section-subtitle">Selected projects that showcase my skills</p>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-card">
+                    <div class="project-overlay">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="project-title">Hotel Revenue Optimization using Hybrid Genetic Algorithm</h3>
+                        <p class="project-description">
+                            Implemented the system with official Royale Chulan Kuala Lumpur 2024 data and using MVC architectural pattern
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Java EE</span>
+                            <span class="tech-badge">GA</span>
+                            <span class="tech-badge">Optimization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-card">
+                    <div class="project-overlay">
+                        <div class="project-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3 class="project-title">Sentiment Analysis on Reddit Comments regarding Movies</h3>
+                        <p class="project-description">
+                            Built a machine learning sentiment model to classify Reddit comments as positive, neutral, or negative.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">SVM & LR</span>
+                            <span class="tech-badge">Google Colab</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="project-card">
+                    <div class="project-overlay">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3 class="project-title">Power BI Dashboard: Student Dropout & Academic Success</h3>
+                        <p class="project-description">
+                            Built a Power BI dashboard to visualize dropout and performance data using dataset from UCI.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Power BI</span>
+                            <span class="tech-badge">Data Analytics</span>
+                            <span class="tech-badge">Dashboard</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-5" data-aos="fade-up">
+            <a href="{% url 'projects' %}" class="btn btn-primary">View All Projects</a>
+        </div>
+    </div>
+</section>
+
+<!-- Events Managed Section -->
+<section class="section-padding bg-dark">
+    <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="section-title">Latest Activity</h2>
+            <p class="section-subtitle">Highlights from events I've organized and attended</p>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="{% static 'home/images/hotel.JPG' %}" alt="Royale Chulan FYP Presentation ">
+                        <div class="event-date">
+                            <span class="event-month">SEP</span>
+                            <span class="event-day">11</span>
+                            <span class="event-year">2025</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">Royale Chulan FYP Presentation</h3>
+                        <p class="event-description">
+                            Presented my final year project, Hotel Revenue Optimization using Hybrid Genetic Algorithm, EzBoost infront of Royal Chulan Team
+                        </p>
+                        <div class="event-stats">
+                            <span class="event-stat"><i class="fas fa-award"></i> Final Year Project</span>
+                            <span class="event-stat"><i class="fas fa-map-marker-alt"></i> Royale Chulan Damansara</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="{% static 'home/images/kkn.JPG' %}" alt="Kuliah Kerja Nyata 2024">
+                        <div class="event-date">
+                            <span class="event-month">AUG</span>
+                            <span class="event-day">19</span>
+                            <span class="event-year">2024</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">Kuliah Kerja Nyata 2024</h3>
+                        <p class="event-description">
+                            I had the opportunity to join a community service in Samosir Island, Indonesia for 17 days and help in implementing website for Pardomuan I.
+                        </p>
+                        <div class="event-stats">
+                            <span class="event-stat"><i class="fas fa-award"></i> International Community Service 2024</span>
+                            <span class="event-stat"><i class="fas fa-map-marker-alt"></i> Samosir Island, Indonesia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="{% static 'home/images/grad.JPG' %}" alt="Vice Chancellor Award">
+                        <div class="event-date">
+                            <span class="event-month">SEP</span>
+                            <span class="event-day">7</span>
+                            <span class="event-year">2024</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">Vice Chancellor Award</h3>
+                        <p class="event-description">
+                            I was graduated with 3.73 CGPA for my Diploma in Applied Science at Universiti Teknologi MARA, UiTM Shah Alam.
+                        </p>
+                        <div class="event-stats">
+                            <span class="event-stat"><i class="fas fa-certificate"></i> Diploma in Applied Science</span>
+                            <span class="event-stat"><i class="fas fa-map-marker-alt"></i>Dewan Agung Tuanku Canselor, UiTM Shah Alam </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-5" data-aos="fade-up">
+            <a href="{% url 'about' %}#events" class="btn btn-primary">View All Activities</a>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container text-center">
+        <div data-aos="zoom-in">
+            <h2 class="cta-title">Let's Work Together</h2>
+            <p class="cta-description">Have a project in mind? Let's discuss how we can turn your ideas into reality.</p>
+            <a href="{% url 'contact' %}" class="btn btn-light btn-lg">
+                <i class="fas fa-paper-plane me-2"></i>Start a Conversation
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- AOS Animation Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 120
+    });
+</script>
+{% endblock %}

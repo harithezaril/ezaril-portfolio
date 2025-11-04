@@ -1,0 +1,528 @@
+{% extends "home/base.html" %}
+
+{% load static %}
+
+{% block title %}About - Ezaril Harith{% endblock %}
+
+{% block content %}
+<!-- Page Header with Background Image -->
+<section class="page-header page-header-with-image">
+    <div class="page-header-overlay"></div>
+    <div class="page-header-bg" style="background-image: url({% static 'home/images/mypic1.JPG' %});"></div>
+    <div class="container">
+        <h1 class="page-title" data-aos="fade-up">AboutMe</h1>
+        <p class="page-subtitle" data-aos="fade-up" data-aos-delay="100">Get to know me and my work</p>
+    </div>
+</section>
+
+<!-- About Content -->
+<section class="section-padding">
+    <div class="container">
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-6" data-aos="fade-right">
+                <div class="about-content">
+                    <h2 class="content-title">Hi, I'm Ezaril Harith</h2>
+                    <p class="content-text">
+                        I'm a passionate developer with expertise in Django web development, artificial intelligence, and optimization systems. I thrive on turning complex challenges into elegant, efficient solutions that make a real impact.
+                    </p>
+                    <p class="content-text">
+                        My journey in technology has been driven by curiosity and a constant desire to learn. From building genetic algorithms for revenue optimization to crafting modern web applications, I approach every project with dedication and creative problem-solving.
+                    </p>
+                    <p class="content-text">
+                        Beyond coding, I'm passionate about sharing knowledge and building community. I've organized and managed various tech events, workshops, and conferences to help others grow in their development journey.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-python skill-icon"></i>
+                        <h4>Python</h4>
+                        <p>Advanced</p>
+                    </div>
+                    <div class="skill-item">
+                    <i class="fas fa-chart-line skill-icon"></i>
+                    <h4>Optimization</h4>
+                     <p>Expert</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-brain skill-icon"></i>
+                        <h4>AI/ML</h4>
+                        <p>Intermediate</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database skill-icon"></i>
+                        <h4>Databases</h4>
+                        <p>Advanced</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Technical Skills -->
+<section class="section-padding bg-dark">
+    <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="section-title">TechnicalSkills</h2>
+            <p class="section-subtitle">Technologies and tools I work with</p>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="skill-category">
+                    <h4><i class="fas fa-code me-2"></i>Programming Languages</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">C++</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="skill-category">
+                    <h4><i class="fas fa-layer-group me-2"></i>Frameworks & Libraries</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">jQuery</span>
+                        <span class="skill-tag">Java EE</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="skill-category">
+                    <h4><i class="fas fa-robot me-2"></i>AI & Optimization</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Hybrid GA</span>
+                        <span class="skill-tag">Data Analysis</span>
+                        <span class="skill-tag">Optimization</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="skill-category">
+                    <h4><i class="fas fa-tools me-2"></i>Tools & Technologies</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">REST APIs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Events Managed Section -->
+<section class="section-padding" id="events">
+    <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="section-title">LatestActivity</h2>
+            <p class="section-subtitle">All events I've organized and attended</p>
+        </div>
+        
+        <div class="timeline-events">
+            <!-- Event 1 -->
+            <div class="event-detail" data-aos="fade-up">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="event-detail-image">
+                            <img src="{% static 'home/images/hotel2.JPG' %}" alt="Royale Chulan">
+                            <div class="event-date-large">
+                                <span class="event-month">SEP</span>
+                                <span class="event-day">11</span>
+                                <span class="event-year">2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 class="event-detail-title">Royale Chulan Final Year Project Presentation 2025</h3>
+                        <p class="event-detail-description">
+                            Honoured to present my final year project, EzBoost, in front of Dato’ Rosthman Ibrahim, CEO of Royale Chulan, together with the esteemed management team, my supervisor Associate Professor Ts. Dr. Nur Atiqah Sia Binti Abdullah, and my two lecturers.
+                            It was truly an incredible experience to share my work and discuss how data-driven optimization can contribute to enhancing hotel revenue strategies. Grateful for the opportunity, insightful feedback, and continuous support throughout this journey!
+                        </p>
+                        <div class="event-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>September 11, 2025</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-microphone"></i>
+                                <span>8 Speakers</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Mutiara Damansara</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="event-detail" data-aos="fade-up">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="event-detail-image">
+                            <img src="{% static 'home/images/google.JPG' %}" alt="AI Workshop Series">
+                            <div class="event-date-large">
+                                <span class="event-month">SEP</span>
+                                <span class="event-day">24</span>
+                                <span class="event-year">2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 class="event-detail-title">Google Cloud: Associate Data Practitioner</h3>
+                        <p class="event-detail-description">
+                            From 24–26 September 2025, I had the incredible opportunity to participate in the Google Cloud Associate Data Practitioner program, proudly sponsored by the Selangor State Government. It was a valuable learning experience where I explored the fundamentals of data engineering, Google Cloud, machine learning, and artificial intelligence. The three-day session was expertly guided by Sir Yuen Ming Yong, whose insights made the training both engaging and impactful.
+                        </p>
+                        <p class="event-detail-description">
+                            Through this program, I gained hands-on exposure to Google Cloud tools and learned how data can be effectively managed, processed, and analyzed to support intelligent decision-making. This experience strengthened my understanding of cloud-based data workflows and inspired me to further pursue the integration of AI and data analytics in my future projects and professional journey.
+                        </p>
+                        <div class="event-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-users"></i>
+                                <span>50+ Participants</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-clock"></i>
+                                <span>3-Day Event</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-laptop-code"></i>
+                                <span>Hands-on Training</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>Certificates Issued</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="event-detail" data-aos="fade-up">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="event-detail-image">
+                            <img src="{% static 'home/images/fyp.JPG' %}" alt="Coding Bootcamp">
+                            <div class="event-date-large">
+                                <span class="event-month">AUG</span>
+                                <span class="event-day">27</span>
+                                <span class="event-year">2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 class="event-detail-title">Presentation Final Year Project</h3>
+                        <p class="event-detail-description">
+                            Today, I had the honor of presenting my Final Year Project entitled “Hotel Revenue Optimization System using Genetic Algorithm” in front of my supervisor, Assoc. Prof. Dr. Nor Atiqah Sia, as well as Dr. Abdullah Dr. Ezzatul Akmal Kamaru Zaman and Assoc. Prof. Dr. Sofianita Mutalib. My project focuses on leveraging Genetic Algorithms, an evolutionary computing technique to optimize hotel room pricing across different seasons with the goal of maximizing revenue. To bring this concept to life, I developed a web-based system using Java (NetBeans) called EzBoost, where the optimization results can be visualized and tested in real time.
+                        </p>
+                        <p class="event-detail-description">
+                            I am truly grateful to my supervisor, Assoc. Prof. Dr. Nor Atiqah Sia, for her continuous guidance and for trusting me with access to a real dataset from Royale Chulan Kuala Lumpur. This experience has been both rewarding and inspiring, bridging the gap between academic research and real-world industry application. 
+                        </p>
+                        <div class="event-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-users"></i>
+                                <span>Individual Project</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-clock"></i>
+                                <span>5 Weeks</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-project-diagram"></i>
+                                <span>Final Projects</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>100% Completion</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 4 -->
+            <div class="event-detail" data-aos="fade-up">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="event-detail-image">
+                            <img src="{% static 'home/images/skm.JPG' %}" alt="Hackathon 2023">
+                            <div class="event-date-large">
+                                <span class="event-month">JAN</span>
+                                <span class="event-day">12</span>
+                                <span class="event-year">2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 class="event-detail-title">President of Sekretariat Kebajikan Mahasiswa FSKM</h3>
+                        <p class="event-detail-description">
+                            On January 12th, we celebrated the unwavering dedication of the Sekretariat Kebajikan Mahasiswa (SKM) committee at my faculty. Their continuous efforts in organizing welfare initiatives such as Bacaan Yasin, Pitstop, and Preloved KPPIM have played a vital role in nurturing a compassionate and supportive student community. During the event, certificates of appreciation were presented to recognize their remarkable contributions and commitment.
+                        </p>
+                        <p class="event-detail-description">
+                            This occasion holds deep meaning for me as it marks my final semester serving as the President of SKM. Leading this team has been an incredibly rewarding and transformative journey, filled with learning, collaboration, and growth. My heartfelt gratitude goes to Dr. Suzana Ahmad for her constant guidance and encouragement, and to my fellow committee members for their trust and dedication. The experiences and lessons gained from this chapter will always remain close to my heart.
+                        </p>
+                        <div class="event-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-users"></i>
+                                <span>24 Participants</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>January 12, 2025</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-users-cog"></i>
+                                <span>3 Teams</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 5 -->
+            <div class="event-detail" data-aos="fade-up">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="event-detail-image">
+                            <img src="{% static 'home/images/guus.JPG' %}" alt="Web Development Meetup">
+                            <div class="event-date-large">
+                                <span class="event-year">2016</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 class="event-detail-title">Guus Friendship</h3>
+                        <p class="event-detail-description">
+                           The friendship I share with my school friends is something truly special, a bond that has given me strength through every stage of life. Though we come from different races, cultures, and backgrounds, our connection has always been rooted in genuine care and understanding. From the laughter and struggles of high school to the responsibilities of adulthood, we’ve grown together, shaped each other, and created memories that continue to remind me of where I came from and who I’ve become.
+                        </p>
+                        <div class="event-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-users"></i>
+                                <span>Friendships</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Event 6 -->
+            <div class="event-detail" data-aos="fade-up">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="event-detail-image">
+                            <img src="{% static 'home/images/dekan.PNG' %}" alt="Hackathon 2023">
+                            <div class="event-date-large">
+                                <span class="event-month">DEC</span>
+                                <span class="event-day">15</span>
+                                <span class="event-year">2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 class="event-detail-title">Majlis Anugerah Dekan Sesi Mac - Aug 2024</h3>
+                        <p class="event-detail-description">
+                            On December 15th, 2024, I had the honor of serving as the Event Manager for the Majlis Anugerah Dekan March-August 2024. With almost 1,000 students in attendance, it was a significant responsibility and a memorable experience.This event holds a special place in my heart as it marks the final program I managed before stepping down as part of the Sekretariat Mahasiswa. I am incredibly grateful to my dedicated team-Aiqal, Fatin, Khai and Iwanina who supported me as Stage Manager, Floor Manager and Liaison Officer.
+                        </p>
+                        <div class="event-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-users"></i>
+                                <span>1000+ Participants</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>December 15, 2025</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-users-cog"></i>
+                                <span>Event Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              <!-- Event 7 -->
+            <div class="event-detail" data-aos="fade-up">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="event-detail-image">
+                            <img src="{% static 'home/images/skm2.JPG' %}" alt="Hackathon 2023">
+                            <div class="event-date-large">
+                                <span class="event-month">NOV</span>
+                                <span class="event-day">5</span>
+                                <span class="event-year">2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 class="event-detail-title">Pre-Loved Boutique @ FSKM</h3>
+                        <p class="event-detail-description">
+                            I'm thrilled to share that I recently organized the Pre-Loved Boutique at FSKM. A meaningful charity initiative dedicated to fostering a spirit of kindness and mutual support within our campus community. This program enables students to receive free clothing generously donated by fellow students, lecturers, and UiTM staff.
+                        <p class="event-detail-description">
+                            The Pre-Loved Boutique goes beyond just sharing clothes; it represents a movement of compassion, empathy, and unity. By providing an accessible platform for donations, we aim to inspire a stronger culture of giving and togetherness among our students.
+                        </p>
+                        <div class="event-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-users"></i>
+                                <span>24 Participants</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-star"></i>
+                                <span>Charity</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-users-cog"></i>
+                                <span>3 Teams</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Event 8 -->
+            <div class="event-detail" data-aos="fade-up">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="event-detail-image">
+                            <img src="{% static 'home/images/grad.JPG' %}" alt="Hackathon 2023">
+                            <div class="event-date-large">
+                                <span class="event-month">SEP</span>
+                                <span class="event-day">7</span>
+                                <span class="event-year">2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 class="event-detail-title">Vice Chancellor Award</h3>
+                        <p class="event-detail-description">
+                            I am deeply honored to have received the Vice Chancellor’s Award upon completing my Diploma in Applied Science at UiTM Tapah, Perak with a CGPA of 3.73. This recognition marks the culmination of 2.5 years of dedication, perseverance, and passion for learning.
+                        </p>
+                        <p class="event-detail-description">
+                            During my diploma journey, my team and I conducted a case study titled “Preparation of Base-Modified Activated Carbon from Oil Palm Frond for the Removal of Methyl Orange from Aqueous Solutions.” This research experience not only strengthened my analytical and laboratory skills but also deepened my appreciation for sustainable scientific innovation and teamwork.
+                        </p>
+                        <div class="event-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>Vice Chancellor Award</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>January 12, 2025</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-globe"></i>
+                                <span>DATC, UiTM Shah Alam</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Event 9-->
+            <div class="event-detail" data-aos="fade-up">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="event-detail-image">
+                            <img src="{% static 'home/images/kkn2.JPG' %}" alt="Hackathon 2023">
+                            <div class="event-date-large">
+                                <span class="event-month">Aug</span>
+                                <span class="event-day">19</span>
+                                <span class="event-year">2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 class="event-detail-title">Kuliah Kerja Nyata 2024</h3>
+                        <p class="event-detail-description">
+                            From August 19th to September 6th, I had the incredible opportunity to participate in a community service program in Pardomuan I, Indonesia. Over the course of three weeks, I collaborated with passionate individuals to clean the village and promote environmental sustainability, taught elementary school students basic knowledge to support their early education, and developed a website to strengthen the village’s digital presence and connectivity.
+                        <p class="event-detail-description">
+                            This meaningful journey has deepened my appreciation for community service and the collective effort it takes to create lasting change. It reminded me that even small acts of kindness can leave a significant impact. I’m truly grateful for the experiences, friendships, and lessons gained throughout this unforgettable chapter
+                        <div class="event-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-users"></i>
+                                <span>Indonesia x Malaysia</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Aug 19 - Sep 4, 2024</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-star"></i>
+                                <span>Community Service</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Event 9-->
+            <div class="event-detail" data-aos="fade-up">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="event-detail-image">
+                            <img src="{% static 'home/images/malam.JPEG' %}" alt="Hackathon 2023">
+                            <div class="event-date-large">
+                                <span class="event-month">Jun</span>
+                                <span class="event-day">21</span>
+                                <span class="event-year">2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 class="event-detail-title">Malam Penyucian Jiwa</h3>
+                        <p class="event-detail-description">
+                            On 21 June 2024, I had the privilege of serving as the Event Manager for Malam Penyucian Jiwa, a spiritual program held at UiTM Puncak Perdana. This meaningful event was organized to help students spiritually and mentally prepare for their upcoming final examinations.
+                        <p class="event-detail-description">
+                            The program featured an inspiring talk session by Ustaz Mohd Hafiz from UiTM Puncak Perdana, who shared valuable insights on faith, resilience, and inner peace. The evening concluded with a solat hajat session, followed by light refreshments for all attendees. It was a truly fulfilling experience to lead an event that nurtured both spiritual reflection and community connection among students.
+                        <div class="event-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-users"></i>
+                                <span>72 Participants</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Jun 21, 2024</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-star"></i>
+                                <span>Spiritual</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container text-center">
+        <div data-aos="zoom-in">
+            <h2 class="cta-title">Interested in Collaboration?</h2>
+            <p class="cta-description">Let's discuss how we can work together on your next project or event</p>
+            <a href="{% url 'contact' %}" class="btn btn-light btn-lg">
+                <i class="fas fa-envelope me-2"></i>Get In Touch
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+</script>
+{% endblock %}

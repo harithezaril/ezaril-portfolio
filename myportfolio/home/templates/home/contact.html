@@ -1,0 +1,183 @@
+{% extends "home/base.html" %}
+
+{% block title %}Contact - Ezaril Harith{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <h1 class="page-title" data-aos="fade-up">GetInTouch</h1>
+        <p class="page-subtitle" data-aos="fade-up" data-aos-delay="100">Let's connect and collaborate</p>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="section-padding">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Information -->
+            <div class="col-lg-5 mb-4" data-aos="fade-right">
+                <div class="contact-info-wrapper">
+                    <h2 class="info-title">ContactInformation</h2>
+                    <p class="info-subtitle">Feel free to reach out through any of these channels</p>
+                    
+                    <div class="contact-info-items">
+                        <div class="contact-info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <h5>Email</h5>
+                                <a href="mailto:harithezaril@yahoo.com">harithezaril@yahoo.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="info-content">
+                                <h5>Phone</h5>
+                                <a href="tel:+60143971009">+6014-397 1009</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h5>Location</h5>
+                                <p>Kuala Lumpur, Malaysia</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-connect">
+                        <h5>Connect With Me</h5>
+                        <div class="social-icons-large">
+                            <a href="https://github.com/harithezaril" target="_blank" class="social-icon-large" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/ezaril-harith-584272322" target="_blank" class="social-icon-large" title="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://instagram.com/ezarilharith" target="_blank" class="social-icon-large" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="availability-card">
+                        <i class="fas fa-clock"></i>
+                        <h5>Availability</h5>
+                        <p>Currently open to internship opportunities and collaborations</p>
+                        <span class="status-badge">
+                            <i class="fas fa-circle"></i> Available
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Form -->
+            <div class="col-lg-7" data-aos="fade-left">
+                <div class="contact-form-wrapper">
+                    <h2 class="form-title">SendMessage</h2>
+                    <p class="form-subtitle">Fill out the form below and I'll get back to you as soon as possible.</p>
+                    
+                    <form class="contact-form" method="post" action="#">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="form-group">
+                                    <label for="name"><i class="fas fa-user me-2"></i>Your Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="John Doe" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="form-group">
+                                    <label for="email"><i class="fas fa-envelope me-2"></i>Your Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <div class="form-group">
+                                <label for="subject"><i class="fas fa-tag me-2"></i>Subject</label>
+                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Project Inquiry" required>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <div class="form-group">
+                                <label for="message"><i class="fas fa-comment me-2"></i>Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="6" placeholder="Tell me about your inquiry..." required></textarea>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <i class="fas fa-paper-plane me-2"></i>Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quick Links Section -->
+<section class="section-padding bg-dark">
+    <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="section-title">QuickLinks</h2>
+            <p class="section-subtitle">Explore other sections of my portfolio</p>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <a href="{% url 'about' %}" class="quick-link-card">
+                    <div class="quick-link-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>About Me</h3>
+                    <p>Learn more about my background, skills, and experience</p>
+                    <span class="link-arrow">→</span>
+                </a>
+            </div>
+            
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <a href="{% url 'projects' %}" class="quick-link-card">
+                    <div class="quick-link-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>My Projects</h3>
+                    <p>Check out my portfolio of work and case studies</p>
+                    <span class="link-arrow">→</span>
+                </a>
+            </div>
+            
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <a href="{% url 'about' %}#events" class="quick-link-card">
+                    <div class="quick-link-icon">
+                        <i class="fas fa-calendar"></i>
+                    </div>
+                    <h3>Activities</h3>
+                    <p>View events I've organized and participated in</p>
+                    <span class="link-arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+</script>
+{% endblock %}
