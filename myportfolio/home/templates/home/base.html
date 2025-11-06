@@ -42,6 +42,11 @@
                     <li class="nav-item">
                         <a class="nav-link {% if 'contact' in request.path %}active{% endif %}" href="{% url 'contact' %}">Contact</a>
                     </li>
+                     <li class="nav-item">
+        <a class="nav-link" href="{% static 'home/resume/RESUME_EZARIL.pdf' %}" download>
+            <i class="fas fa-download me-1"></i>Resume
+        </a>
+    </li>
                 </ul>
                 <a href="{% url 'contact' %}" class="btn btn-outline-primary ms-3">Get In Touch</a>
             </div>
@@ -73,9 +78,8 @@
                 <div class="col-md-3">
                     <h6 class="footer-title">Connect</h6>
                     <div class="social-links">
-                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/harithezaril" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ezaril-harith-584272322" class="social-icon"><i class="fab fa-linkedin"></i></a>
                         <a href="mailto:ezaril@example.com" class="social-icon"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
